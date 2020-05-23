@@ -7,4 +7,19 @@ body{
     padding: 0;
     margin: 0;
     font-family:'Poppins', sans-serif;
+    background: mintcream;
+}
+
+ul{
+    display: flex;
+    background:gray;
+}
+
+li{
+padding: 10px;
+list-style: none;
+}
+
+div{
+    width: 100%;
 }
