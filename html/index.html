@@ -1,39 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Api</title>
-    <link rel ="stylesheet" href="../css/style.css">
- </head>
-<body>
-    <section>
-         <div>
-             <ul>
-                <li>Home</li>
-                <li>Today News</li>
-                <li>Trending</li>
-                <li>Whats New</li>
-                <li>Local</li>
-             </ul>
-         </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>NEWS API</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/style.css" />
+    </head>
+    
+	<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">NEWS EVERY THING</a> -->
+        <!-- <a class="navbar-brand" href="#"><img src="../images/enews.jpg"></a> -->
+        <a class="navbar-brand1" href="#"><img src="../images/stay-home-4981866_1280.webp"></a>
+        
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button> -->
 
-         <section>
-             <div  class="first">
-                 <img src="../images/unnamed.jpg">
-             </div>
-         </section>
+          
+            <!-- covidBlock -->
 
-    </section>
+           <li class="nav-item1">
+               <!-- <img src="../images/covid-19-10.jpg"> -->
+               <!-- <h5>Corona Details</h5> -->
+               <!-- <span>Global</span> -->
+               <li class="nav-item">
+                   <!-- <img src="../images/stay-home-coronavirus-covid-19-health-shut.jpg"> -->
+                   <a class="="nav-item id="covidBlock"></a>
+               </li>
+           </li>
+
+            <form class="form-inline my-2 my-lg-0">
+              <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
+          </div>
+      </nav>
+
+                <!--ssports Block-->
 
 
+      <article id="container-fluid">
+        <div class="articlesContent">
+          <div class="row">
+              <div class="col-md-3">
+                <h4 class="p-2 border-bottom text-white font-weight-bold bg-primary ml-2 text-uppercase" style="text-align: center;">Sports</h4>
+                  <div id="sportsSection">
+                    <div id="sportsFirstTemplate"></div>
+                    <div id="sportsAllTemplate"></div>
+              </div> 
+              </div>
+          <!-- </div>      
+        </div> -->
+                    <!--Weather block-->
 
 
+    <div class="col-md-5" style="margin-top: -6px;height: 43px;">
+         
+        <h5 class="p-2 border-bottom text-white font-weight-bold mt-2 text-uppercase"  style="text-align: center;">Search Weather</h5>
+        <!-- <input type="search" class="form-control weather" id="input" placeholder="search weather"> -->
+        <form>
+        <input type="text" id="weather"  aria-label="Search through site content" placeholder="    Search Weather" style="background-color: rgb(211, 199, 199);
+        color: black; width: 80%; border: none;">
 
+        <button onclick="myFunction()"  style="width: 19%;">Search </button>
+</form>
+   
+    <div id="weatherTemplate"></div>
+</div> 
 
+           
+                   <!--entertainment block-->
 
+              <div class="col-md-4">
+                <h4 class="p-2 border-bottom text-white font-weight-bold bg-primary ml-2 text-uppercase"  style="text-align: center;">Entertainment</h4>
+                <div id="entertainmentSection">
+                  <div id="entertainmentFirstTemplate"></div>
+                  <div id="entertainmentAllTemplate"></div>
+                </div>           
+              </div>
+          </div>            
+        </div>        
+      </article>
 
-
-    <link >
-</body>
+      
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/covid19.js"></script>
+        <script src="../js/weather.js"></script>
+       	</body>
 </html>
